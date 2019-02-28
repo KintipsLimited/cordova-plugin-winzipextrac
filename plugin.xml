@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-winzipextract" version="1">
+   <name>cordova-plugin-winzipextract</name>
+   <js-module src="www/winZipExtract.js" name="cordova-plugin-winzipextract">
+      <clobbers target="cordova.plugins.winzipextract"/>
+   </js-module>
+   <platform name="windows">
+      <js-module name="winzipextractProxy" src="src/windows/winZipExtract.js">
+         <runs target="" />
+      </js-module>
+      <framework src="src/windows/WinRuntimes.winmd" target-dir="x64" arch="x64" custom="true"/>
+   </platform>
+</plugin>
