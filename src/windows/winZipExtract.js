@@ -6,7 +6,7 @@ cordova.commandProxy.add("extractFile",
                 await service.hello(zipFileName);
                 successCallback(1);
             } catch (e){
-                errorCallback(-1);
+                errorCallback(0);
             }
         }
     }
